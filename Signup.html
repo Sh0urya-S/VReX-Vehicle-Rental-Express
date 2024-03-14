@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/signuplayout.css">
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <div class="container">
+      <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Personal E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="123@example.com">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" placeholder="Enter password">
+          <input type="checkbox" id="revealPassword" onclick="togglePassword('password')">
+          <label for="revealPassword">Reveal Password</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="confirmPassword">Confirm Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="ConfirmPassword" name="confirmPassword" placeholder="Confirm password">
+          <input type="checkbox" id="revealConfirmPassword" onclick="togglePassword('confirmPassword')">
+          <label for="revealConfirmPassword">Reveal Password</label>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-25">
+            <label for="aadharno">Aadhar No.</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="aadharno" name="aadharno" placeholder="Enter the 12 Digit Aadhar No." pattern="[0-9]{12}" title="Please enter a 12-digit number">
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-25">
+            <label for="state">Residential State</label>
+        </div>
+        <div class="col-75">
+            <select id="state" name="state">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="city">Residential City</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="city" name="city" placeholder="Enter city">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<div class="row">
+  <head>
+    <link rel="stylesheet" href="css/checkout.css">
+  </head>
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <!-- <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="Enter your email(eg:123@gmail.com)">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="Enter your address">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="Enter your city">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="Enter your state">
+                </div>
+                <div class="col-50">
+                  <label for="pincode">Pincode</label>
+                  <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode">
+                </div>
+              </div>
+            </div>
+   -->
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <img src="checkoutcontent/visa.png " alt="visa" width="50" height="40">
+                <img src="checkoutcontent/paypal.png " alt="paypal" width="50" height="40">
+                <img src="checkoutcontent/logo.png" alt="logo" width="50" height="40">
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Melroy">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Expiry Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Expiry Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2000">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="000">
+                </div>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart
+                  <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                  </span>
+                </h4>
+                <p><a href="#">Car 1</a> <span class="price">₹1000</span></p>
+                <p><a href="#">Car 2</a> <span class="price">₹4000</span></p>
+                <p><a href="#">Car 3</a> <span class="price">₹10000</span></p>
+                <p><a href="#">Car 4</a> <span class="price">₹6000</span></p>
+               
+                <p>Total <span class="price" style="color:black"><b>₹21000</b></span></p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Vehicle delivery address same as billing.
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>

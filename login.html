@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/loginlayout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container log-in-container">
+            <form action="login.php" method="post"> <!-- Modified action to point to the PHP file -->
+                <h1>Login</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" name="email" placeholder="Email" required /> <!-- Added name attribute for email input -->
+                <input type="password" name="password" placeholder="Password" required /> <!-- Added name attribute for password input -->
+                <a href="#">Forgot your password?</a>
+                <a href="Signup.html">Don't have an account yet? Sign up</a>
+                <button type="submit">Log In</button> <!-- Added type attribute for submit button -->
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>VRex</h1>
+                    <p>Here we can add our logo or something</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

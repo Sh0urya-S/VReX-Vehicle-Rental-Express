@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/logincard.css">
+  <script src="js/toggleForms.js" defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="flip-card" id="card">
+      <div class="card-content">
+        <div class="card-title">
+          <h2>LOGIN</h2>
+          <div class="underline-title"></div>
+        </div>
+        <form method="post" class="form">
+          <label for="user-email" class="fieldnamecontent">&nbsp;Email</label>
+          <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+          <label for="user-password" class="fieldnamecontent">&nbsp;Password</label>
+          <input id="user-password" class="form-content" type="password" name="password" required />
+          <a href="#" id="forgot-pass">Forgot password?</a>
+          <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+          <a href="#" id="signup-toggle">Don't have an account yet? Sign up</a>
+        </form>
+      </div>
+
+      <div class="card-content" id="card-signup">
+        <div class="card-title">
+          <h2>SIGN UP</h2>
+          <div class="underline-title"></div>
+        </div>
+        <form method="post" class="form">
+          <label for="signup-firstname" style="padding-top:13px">&nbsp;First Name</label>
+          <input id="signup-firstname" class="form-content" type="text" name="first-name" required />
+
+          <label for="signup-lastname" style="padding-top:13px">&nbsp;Last Name</label>
+          <input id="signup-lastname" class="form-content" type="text" name="last-name" required />
+
+          <label for="signup-aadhar" style="padding-top:13px">&nbsp;Aadhar Number</label>
+          <input id="signup-aadhar" class="form-content" type="number" name="aadhar-number" pattern="\d{12}" placeholder="Enter 12-digit Aadhar number" required />
+
+          <label for="signup-state" style="padding-top:13px">&nbsp;Residential State</label>
+          <select id="signup-state" class="form-content" name="residential-state" required>
+            <option value="" disabled selected>Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+
+          <label for="signup-city" style="padding-top:13px">&nbsp;Residential City</label>
+          <input id="signup-city" class="form-content" type="text" name="residential-city" required />
+
+          <label for="signup-email" style="padding-top:13px">&nbsp;Email</label>
+          <input id="signup-email" class="form-content" type="email" name="email" autocomplete="on" required />
+
+          <label for="signup-password" style="padding-top:22px">&nbsp;Password</label>
+          <input id="signup-password" class="form-content" type="password" name="password" required />
+
+          <label for="confirm-password" style="padding-top:22px">&nbsp;Confirm Password</label>
+          <input id="confirm-password" class="form-content" type="password" name="confirm-password" required />
+
+          <input id="submit-btn-signup" type="submit" name="submit" value="SIGN UP" />
+          <a href="#" id="login-toggle">Already have an account? Login</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

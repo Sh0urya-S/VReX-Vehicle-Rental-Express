@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="css/bookingdetails.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Details</h1>
+        <form id="bookingForm" action="/submit_booking" method="POST">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <textarea id="location" name="location" rows="1" placeholder="Enter location"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+                <input type="time" id="start-time" name="start-time">
+            </div>
+            <div class="form-group">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+                <input type="time" id="end-time" name="end-time">
+            </div>
+            <div class="form-group">
+                <label for="vehicle-quantity">Select the type of Cars:</label>
+                <select id="vehicle-quantity" name="vehicle-quantity"></select>
+                <div id="car-availability" class="availability-box"></div>
+            </div>
+            <div class="form-group">
+                <label for="bike-quantity">Select the type of Bikes:</label>
+                <select id="bike-quantity" name="bike-quantity"></select>
+                <div id="bike-availability" class="availability-box"></div> 
+            </div>
+            <div class="form-group payment-button">
+                <input type="submit" value="Proceed to Payment">
+            </div>
+        </form>
+    </div>
+    <script src="js/bookingdetails.js"></script>
+</body>
+</html>
